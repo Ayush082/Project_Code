@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>RespoResturent.com</title>
+        <link rel="stylesheet" href="resturent.css">
+
+    </head>
+    <body> <!-- ☰,×  --> 
+        <div class="wrapper">
+            <nav class="menu">
+                <button aria-expanded="false" aria-controls="menu-list">
+                    <span class="open">☰</span>
+                    <span class="close">×</span>
+                     "Menu"
+                </button>
+                <ul id="menu-list">
+                    <li><a href="">Match Day Special</a> </li>
+                    <li><a href=""> Street Food</a> </li>
+                    <li><a href=""> Beers</a>  </li>
+                    <li> <a href=""> Home Special</a></li>
+                    <li><a href=""> Desserts</a></li>
+                </ul>
+            </nav>
+            <div class="top">
+                <header class="hero">
+                    <h1>Welcome to Respo!</h1>
+                    <p>Bole To WoW!</p>
+                </header>
+                <div class="cta cta1">
+                    <p class="price">345/-</p>
+                    <p>Home Special</p>
+                </div>
+                <div class="cta cta2">
+                    <p class="price">545/-</p>
+                    <p>Beers</p>
+                </div>
+            </div>
+            <section class="features">
+                <div class="feature">
+                    <span class="icon">🍕🍔</span>
+                    <h3>Foodies</h3>
+                    <p>Our aim is to offer simple,FRESH,Good Food.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🍺</span>
+                    <h3>Beers</h3>
+                    <p>"Beer.The best damn drink in the world!"</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🍷</span>
+                    <h3>Wines</h3>
+                    <p>"Wines with full,pleasant flavoures that are sweet and 'rounded' in nature are described as rich!"</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🎵💃</span>
+                    <h3>Disco</h3>
+                    <p>"LIVE IT UP,drink it down,PARTY PARTY"</p>
+                </div>
+            </section>
+            <section class="about">
+                <img src="F:\Practice.html\new\image\queso-taco.png" alt="yummy taco" class="about_mockup">
+                <div class="about_details">
+                    <h2>Featured taco</h2>
+                    <p>Slim Profile, easy to hold and loaded with cheese.</p>
+                    <p>This is the one you have been waiting for</p>
+                    <button>Learn More →</button>
+                </div>
+            </section>
+            <section class="gallery">
+                <h2>
+                    :: before
+                    "Instant Grams"
+                    ::after
+                </h2> 
+                <img src="../image/match1.jpg" alt> 
+                <img src="../image/match3.jpg" alt>
+                <img src="../image/match1.jpg" alt>
+                <img src="../image/match3.jpg" alt>
+                <img src="../image/match1.jpg" alt>
+                <img src="../image/match3.jpg" alt> 
+                <img src="../image/match1.jpg" alt>
+                <img src="../image/match3.jpg" alt>
+                <img src="../image/match8.jpg" alt>
+                <img src="../image/match1.jpg" alt>
+                <img src="../image/match8.jpg" alt>
+                <img src="../image/match1.jpg" alt>
+            </section>
+        </div>
+        <script>
+            const navButton=document.querySelector('button[aria-expanded]');
+            function toggleNav({target}){
+                const expanded=target.getAttribute('aria-expanded') === 'true' || false;
+                navButton.setAttribute('aria-expanded',!expanded);
+            }
+            navButton.addEventListener('click',toggleNav);
+        </script>
+    </body>
+</html>
